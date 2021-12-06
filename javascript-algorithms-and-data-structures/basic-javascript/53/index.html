@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Local Scope and Functions</title>
+</head>
+<body>
+
+<script>
+    function myLocalScope() {
+        // Only change code below this line
+        let myVar;
+        console.log('inside myLocalScope', myVar);
+    }
+    myLocalScope();
+
+    // Run and check the console
+    // myVar is not defined outside of myLocalScope
+    console.log('outside myLocalScope', myVar);
+</script>
+</body>
+</html>
