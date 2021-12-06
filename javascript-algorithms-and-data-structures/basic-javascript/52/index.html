@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Global Scope and Functions</title>
+</head>
+<body>
+
+<script>
+    // Declare the myGlobal variable below this line
+    let myGlobal;
+    const oopsGlobal = 5;
+
+
+    function fun1() {
+        // Assign 5 to oopsGlobal Here
+        myGlobal = 10
+    }
+
+    // Only change code above this line
+
+    function fun2() {
+        var output = "";
+        if (typeof myGlobal != "undefined") {
+            output += "myGlobal: " + myGlobal;
+        }
+        if (typeof oopsGlobal != "undefined") {
+            output += " oopsGlobal: " + oopsGlobal;
+        }
+        console.log(output);
+    }
+</script>
+</body>
+</html>
