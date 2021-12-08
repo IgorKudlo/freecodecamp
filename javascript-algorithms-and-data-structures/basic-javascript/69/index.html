@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Accessing Nested Arrays</title>
+</head>
+<body>
+
+<script>
+    const myPlants = [
+        {
+            type: "flowers",
+            list: [
+                "rose",
+                "tulip",
+                "dandelion"
+            ]
+        },
+        {
+            type: "trees",
+            list: [
+                "fir",
+                "pine",
+                "birch"
+            ]
+        }
+    ];
+
+    const secondTree = myPlants[1].list[1];
+</script>
+</body>
+</html>
